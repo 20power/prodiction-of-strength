@@ -15,13 +15,11 @@
 
 ---
 
-## 1. 你需要准备的文件（你现在项目里已经基本都有）
+## 1. 需要准备的文件
 
 ### 1.1 数据文件
-- 训练集：`single_train_data_without.csv`
-- 测试集：`single_test_data_without.csv`
-
-> 你说测试集共有 914 份纱批（以 “纱批” 列为单位）。
+- 训练集：`train_data.csv`
+- 测试集：`test_data.csv`
 
 ### 1.2 机器学习（ML）产物：bundle.pkl
 你已经通过 `train_clean_pso_all.py` 得到了机器学习 bundle（通常路径类似）：
@@ -55,7 +53,6 @@
 
 ## 2. 本仓库新增的两个脚本分别做什么？
 
-你现在有两个脚本：
 
 ### 2.1 `train_gate_fusion.py`（训练）
 它会做三件事：
@@ -102,8 +99,6 @@
 
 ## 3. 环境要求与安装
 
-建议你在与你现有训练相同的环境运行（因为需要 torch、你的 dataset/model 文件）。
-
 ### 3.1 必需依赖
 - Python 3.8+
 - numpy, pandas
@@ -115,3 +110,4 @@
 安装示例：
 ```bash
 pip install numpy pandas scikit-learn joblib xlsxwriter
+
